@@ -1,0 +1,16 @@
+implement Number
+has Set Number
+has Add Number
+has Subtract Number
+has Multiply Number
+has Divide Number
+has BinaryOperatorsSeparator = 100
+has GreaterThan Number
+has LessThan Number
+has Equal Number
+has NotEqual Number
+has ConditionalSeparator = 200
+has JumpIfTrue Number
+has JumpIfFalse Number
+has JumpIfNotZero Number
+has JumpsSeparator = 300

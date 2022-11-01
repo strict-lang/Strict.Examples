@@ -1,0 +1,4 @@
+implement Number
+has RZero Number
+has ROne Number
+has RTwo Number

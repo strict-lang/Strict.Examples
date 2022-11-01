@@ -1,0 +1,15 @@
+has registers
+TryOperationExecution(statement) Register
+	if registers.Length < 2
+		Error "OperandsRequired"
+	GetOperationResult(statement, registers(1), registers(0))
+	registers(1)
+GetOperationResult(statement, left Register, right Register) Number
+	if statement.Instruction is Instruction.Add
+		return left + right
+	if statement.Instruction is Instruction.Subtract
+		return left - right
+	if statement.Instruction is Instruction.Multiply
+		return left * right
+	if statement.Instruction is Instruction.Divide
+		return left / right
