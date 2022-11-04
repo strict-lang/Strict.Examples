@@ -1,0 +1,23 @@
+has visited Mutable(Nodes)
+GetChainedNode(number) Node
+	let head = Node
+	let current = Mutable(head)
+	for Range(1, number)
+		if index is number
+			current.Next = head
+			return head
+		current.Next = Node
+	current = current.Next
+	head
+GetLoopLength(node) Number
+	let first = Node
+	let second = Node
+	first.Next = second
+	second.Next = first
+	GetLoopLength(first) is 2
+	let third = Node
+	second.Next = third
+	third.Next = first
+	GetLoopLength(first) is 3
+	visited = visited + node
+	visited.Contains(node.Next) ? visited.Length - visited.Index(node.Next) else GetLoopLength(node.Next)
