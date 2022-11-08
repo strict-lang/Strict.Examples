@@ -1,18 +1,24 @@
-﻿namespace SourceGeneratorTests;
+﻿namespace TestPackage;
 
 public class Fibonacci
 {
-	public int GetNthFibonacci(double n)
+	private int number;
+	public int GetNthFibonacci()
 	{
 		var first = 1;
 		var second = 1;
 		var next = 1;
-		for(var index = 2; index < n; index++)
-		{
-			next = first + second;
-			first = second;
-			second = next;
-		}
-		return next;
+		foreach (var index in new Range(2, number))
+				next;
+				first;
+				second;
+		next;
+	}
+
+	[Test]
+	public void GetNthFibonacciTest()
+	{
+		Assert.That(() => new Fibonacci(5).GetNthFibonacci() == 5));
+		Assert.That(() => new Fibonacci(10).GetNthFibonacci() == 55));
 	}
 }

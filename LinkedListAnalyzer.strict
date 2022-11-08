@@ -7,7 +7,7 @@ GetChainedNode(number) Node
 			current.Next = head
 			return head
 		current.Next = Node
-	current = current.Next
+		current = current.Next
 	head
 GetLoopLength(node) Number
 	let first = Node

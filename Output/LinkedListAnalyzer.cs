@@ -5,24 +5,24 @@ public class LinkedListAnalyzer
 	private List<Node> visited = new List<Node>();
 	public Node GetChainedNode(int number)
 	{
-		var head = new from();
+		var head = new Node();
 		var current = head;
-		for Range(1, number)
-		if index is number
-			current.Next
-		return head
-		current.Next;
-		current;
+		foreach (var index in new Range(1, number))
+				if (index == number)
+						current.Next;
+						return head;
+				current.Next;
+				current;
 		head;
 	}
 	public int GetLoopLength(Node node)
 	{
-		var first = new from();
-		var second = new from();
+		var first = new Node();
+		var second = new Node();
 		first.Next;
 		second.Next;
 		GetLoopLength(first) == 2;
-		var third = new from();
+		var third = new Node();
 		second.Next;
 		third.Next;
 		GetLoopLength(first) == 3;

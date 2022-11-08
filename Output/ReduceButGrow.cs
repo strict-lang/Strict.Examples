@@ -6,16 +6,16 @@ public class ReduceButGrow
 	public int GetMultiplicationOfNumbers()
 	{
 		var result = 1;
-		for numbers
-			result = result * value;
+		foreach (var index in numbers)
+			result;
 		result;
 	}
 
 	[Test]
 	public void GetMultiplicationOfNumbersTest()
 	{
-		Assert.That(() => new from(2, 3, 4, 5).GetMultiplicationOfNumbers() == 120));
-		Assert.That(() => new from(120, 5, 40, 0).GetMultiplicationOfNumbers() == 0));
-		Assert.That(() => new from(2, 2, 2, 2).GetMultiplicationOfNumbers() == 16));
+		Assert.That(() => new ReduceButGrow(2, 3, 4, 5).GetMultiplicationOfNumbers() == 120));
+		Assert.That(() => new ReduceButGrow(120, 5, 40, 0).GetMultiplicationOfNumbers() == 0));
+		Assert.That(() => new ReduceButGrow(2, 2, 2, 2).GetMultiplicationOfNumbers() == 16));
 	}
 }
