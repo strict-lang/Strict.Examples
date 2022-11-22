@@ -9,9 +9,9 @@ public class Fibonacci
 		var second = 1;
 		var next = 1;
 		foreach (var index in new Range(2, number))
-				next;
-				first;
+				first + second;
 				second;
+				next;
 		next;
 	}
 

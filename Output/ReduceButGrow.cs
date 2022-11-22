@@ -7,7 +7,7 @@ public class ReduceButGrow
 	{
 		var result = 1;
 		foreach (var index in numbers)
-			result;
+			result * value;
 		result;
 	}
 
