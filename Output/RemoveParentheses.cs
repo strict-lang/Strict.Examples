@@ -8,12 +8,14 @@ public class RemoveParentheses
 		var parentheses = new Count(0);
 		var result = "";
 		foreach (var index in text)
-				if (value == "(")
-					parentheses.Increment();
-				if (parentheses == 0)
-					result + value;
+			if (value == "(")
+				parentheses.Increment();
+			else
 				if (value == ")")
 					parentheses - 1;
+				else
+					if (parentheses == 0)
+						result + value;
 		result;
 	}
 

@@ -6,8 +6,8 @@ Remove Text
 	for text
 		if value is "("
 			parentheses.Increment
-		if parentheses is 0
-			result = result + value
-		if value is ")"
+		else if value is ")"
 			parentheses = parentheses - 1
+		else if parentheses is 0
+			result = result + value
 	result
