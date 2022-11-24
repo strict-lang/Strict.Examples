@@ -5,15 +5,15 @@ public class RemoveParentheses
 	private string text;
 	public string Remove()
 	{
-		var parenthesesCount = 0;
+		var parentheses = new Count(0);
 		var result = "";
 		foreach (var index in text)
 				if (value == "(")
-					parenthesesCount + 1;
-				if (parenthesesCount == 0)
+					parentheses.Increment();
+				if (parentheses == 0)
 					result + value;
 				if (value == ")")
-					parenthesesCount - 1;
+					parentheses - 1;
 		result;
 	}
 
