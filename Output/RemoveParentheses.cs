@@ -12,10 +12,10 @@ public class RemoveParentheses
 				parentheses.Increment();
 			else
 				if (value == ")")
-					parentheses - 1;
+					var parentheses = parentheses - 1;
 				else
 					if (parentheses == 0)
-						result + value;
+						var result = result + value;
 		result;
 	}
 

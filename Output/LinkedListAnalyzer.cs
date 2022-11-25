@@ -12,7 +12,7 @@ public class LinkedListAnalyzer
 						current.Next;
 						return head;
 				current.Next;
-				current.Next;
+				var current = current.Next;
 		head;
 	}
 	public int GetLoopLength(Node node)
