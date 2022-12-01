@@ -5,7 +5,7 @@ public class ReduceButGrow
 	private List<int> numbers = new List<int>();
 	public int GetMultiplicationOfNumbers()
 	{
-		var result = 1;
+		var result = Mutable(1);
 		foreach (var index in numbers)
 			var result = result * value;
 		result;

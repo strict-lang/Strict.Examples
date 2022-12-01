@@ -6,7 +6,7 @@ public class LinkedListAnalyzer
 	public Node GetChainedNode(int number)
 	{
 		var head = new Node();
-		var current = head;
+		var current = Mutable(head);
 		foreach (var index in new Range(1, number))
 				if (index == number)
 						current.Next;
