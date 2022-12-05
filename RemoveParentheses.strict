@@ -2,7 +2,7 @@ has text
 Remove Text
 	RemoveParentheses("example(unwanted thing)example").Remove is "exampleexample"
 	let parentheses = Count(0)
-	let result = Mutable("")
+	let result = Mutable ""
 	for text
 		if value is "("
 			parentheses.Increment

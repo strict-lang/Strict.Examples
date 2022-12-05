@@ -1,7 +1,7 @@
 has visited Mutable(Nodes)
 GetChainedNode(number) Node
 	let head = Node
-	let current = Mutable(head)
+	let current = Mutable head
 	for Range(1, number)
 		if index is number
 			current.Next = head
