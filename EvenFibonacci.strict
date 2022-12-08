@@ -1,11 +1,6 @@
 has number
 Sum Number
-	EvenFibonacci(33).Sum is 10
-	EvenFibonacci(55).Sum is 44
-	let first = Mutable(1)
-	let second = Mutable(1)
-	let next = Mutable(0)
-	let sum = Mutable(0)
+	constant sum = Mutable(0)
 	for Range(1, number)
 		next = first + second
 		if next >= number
