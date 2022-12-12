@@ -5,9 +5,9 @@ public class Fibonacci
 	private int number;
 	public int GetNthFibonacci()
 	{
-		var first = Mutable(1);
-		var second = Mutable(1);
-		var next = Mutable(1);
+		var first = 1;
+		var second = 1;
+		var next = 1;
 		foreach (var index in new Range(2, number))
 				var next = first + second;
 				var first = second;

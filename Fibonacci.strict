@@ -2,9 +2,9 @@ has number
 GetNthFibonacci Number
 	Fibonacci(5).GetNthFibonacci is 5
 	Fibonacci(10).GetNthFibonacci is 55
-	constant first = Mutable(1)
-	constant second = Mutable(1)
-	constant next = Mutable(1)
+	mutable first = 1
+	mutable second = 1
+	mutable next = 1
 	for Range(2, number)
 		next = first + second
 		first = second

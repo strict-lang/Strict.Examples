@@ -1,7 +1,7 @@
 has visited Mutable(Nodes)
 GetChainedNode(number) Node
 	constant head = Node
-	constant current = Mutable(head)
+	mutable current = head
 	for Range(1, number)
 		if index is number
 			current.Next = head

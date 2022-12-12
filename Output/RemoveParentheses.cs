@@ -6,7 +6,7 @@ public class RemoveParentheses
 	public string Remove()
 	{
 		var parentheses = new Count(0);
-		var result = Mutable("");
+		var result = "";
 		foreach (var index in text)
 			if (value == "(")
 				parentheses.Increment();

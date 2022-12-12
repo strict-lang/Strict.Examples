@@ -2,7 +2,7 @@ has text
 Remove Text
 	RemoveParentheses("example(unwanted thing)example").Remove is "exampleexample"
 	constant parentheses = Count(0)
-	constant result = Mutable("")
+	mutable result = ""
 	for text
 		if value is "("
 			parentheses.Increment
