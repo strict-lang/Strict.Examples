@@ -10,12 +10,12 @@ GetChainedNode(number) Node
 		current = current.Next
 	head
 GetLoopLength(node) Number
-	constant first = Node
-	constant second = Node
+	mutable first = Node
+	mutable second = Node
 	first.Next = second
 	second.Next = first
 	GetLoopLength(first) is 2
-	constant third = Node
+	mutable third = Node
 	second.Next = third
 	third.Next = first
 	GetLoopLength(first) is 3

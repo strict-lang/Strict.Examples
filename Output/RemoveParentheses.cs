@@ -5,11 +5,11 @@ public class RemoveParentheses
 	private string text;
 	public string Remove()
 	{
-		var parentheses = new Count(0);
+		var parentheses = 0;
 		var result = "";
 		foreach (var index in text)
 			if (value == "(")
-				parentheses.Increment();
+				var parentheses = parentheses + 1;
 			else
 				if (value == ")")
 					var parentheses = parentheses - 1;

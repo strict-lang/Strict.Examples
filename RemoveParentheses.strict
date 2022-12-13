@@ -1,11 +1,11 @@
 has text
 Remove Text
 	RemoveParentheses("example(unwanted thing)example").Remove is "exampleexample"
-	constant parentheses = Count(0)
+	mutable parentheses = 0
 	mutable result = ""
 	for text
 		if value is "("
-			parentheses.Increment
+			parentheses = parentheses + 1
 		else if value is ")"
 			parentheses = parentheses - 1
 		else if parentheses is 0

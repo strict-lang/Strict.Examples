@@ -17,12 +17,12 @@ public class LinkedListAnalyzer
 	}
 	public int GetLoopLength(Node node)
 	{
-		var first = new Node();
-		var second = new Node();
+		var first = Node;
+		var second = Node;
 		first.Next;
 		second.Next;
 		GetLoopLength(first) == 2;
-		var third = new Node();
+		var third = Node;
 		second.Next;
 		third.Next;
 		GetLoopLength(first) == 3;

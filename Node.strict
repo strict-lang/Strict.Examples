@@ -1,2 +1,1 @@
-implement Mutable
-has Next Node
+has Next Mutable(Node)
