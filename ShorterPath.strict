@@ -1,0 +1,30 @@
+has target Vector2D
+from(path Text)
+	for path
+		if value is "N"
+			target.Y.Increase
+		if value is "S"
+			target.Y.Decrease
+		if value is "E"
+			target.X.Increase
+		if value is "W"
+			target.X.Decrease
+GetDirections Text
+	ShorterPath("").GetDirections is ""
+	ShorterPath("NNE").GetDirections is "NNE"
+	ShorterPath("NNEN").GetDirections is "NNNE"
+	ShorterPath("SSNEWSN").GetDirections is "S"
+	ShorterPath("NWSE").GetDirections is ""
+	GetVerticalDirections + GetHorizontalDirections
+GetVerticalDirections Text
+	ShorterPath("").GetVerticalDirections is ""
+	ShorterPath("NN").GetVerticalDirections is "NN"
+	ShorterPath("NSN").GetVerticalDirections is "N"
+	for target.Y
+		target.Y > 0 ? "N" : "S"
+GetHorizontalDirections Text
+	ShorterPath("").GetHorizontalDirections is ""
+	ShorterPath("EEEW").GetVerticalDirections is "EE"
+	ShorterPath("WWWE").GetVerticalDirections is "WW"
+	for target.X
+		target.X > 0 ? "E" : "W"
