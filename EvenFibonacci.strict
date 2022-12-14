@@ -1,12 +1,12 @@
 has number
 Sum Number
-	constant sum = Mutable(0)
+	mutable sum = 0
 	for Range(1, number)
 		next = first + second
 		if next >= number
 			return sum
 		if (next % 2) is 0
-			sum = sum + next
+			sum.Increment(next)
 		first = second
 		second = next
 	sum

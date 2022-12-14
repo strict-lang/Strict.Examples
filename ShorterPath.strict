@@ -1,14 +1,17 @@
 has target Vector2D
 from(path Text)
+	//alternative
+	target = Vector2D(path.Count("E") - path.Count("W"), path.Count("N") - path.Count("S"))
+	//if in constructor all members are still assignable/mutable
 	for path
 		if value is "N"
-			target.Y.Increase
+			target.Y.Increment
 		if value is "S"
-			target.Y.Decrease
+			target.Y.Decrement
 		if value is "E"
-			target.X.Increase
+			target.X.Increment
 		if value is "W"
-			target.X.Decrease
+			target.X.Decrement
 GetDirections Text
 	ShorterPath("").GetDirections is ""
 	ShorterPath("NNE").GetDirections is "NNE"
@@ -21,10 +24,10 @@ GetVerticalDirections Text
 	ShorterPath("NN").GetVerticalDirections is "NN"
 	ShorterPath("NSN").GetVerticalDirections is "N"
 	for target.Y
-		target.Y > 0 ? "N" : "S"
+		target.Y > 0 ? "N" else "S"
 GetHorizontalDirections Text
 	ShorterPath("").GetHorizontalDirections is ""
 	ShorterPath("EEEW").GetVerticalDirections is "EE"
 	ShorterPath("WWWE").GetVerticalDirections is "WW"
 	for target.X
-		target.X > 0 ? "E" : "W"
+		target.X > 0 ? "E" else "W"
