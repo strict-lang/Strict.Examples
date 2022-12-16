@@ -1,4 +1,30 @@
-has visited Mutable(Nodes)
+LinkedListAnalyzer
+
+
+
+
+
+constant error = Error("Hi murali")
+for error //ERROR, please specify what to iterate over, error is not a number for a Range, error is NOT an iterator
+  ..??  
+
+for error.Text
+  letters
+
+for error.Stacktraces
+  ..
+
+for hashCode
+  ..
+
+for text
+  letters
+
+for name
+  letters
+
+
+mutable visited Nodes
 GetChainedNode(number) Node
 	constant head = Node
 	mutable current = head
@@ -19,5 +45,14 @@ GetLoopLength(node) Number
 	second.Next = third
 	third.Next = first
 	GetLoopLength(first) is 3
-	visited = visited + node
+	visited.Add(node)
 	visited.Contains(node.Next) ? visited.Length - visited.Index(node.Next) else GetLoopLength(node.Next)
+
+
+	...
+
+
+SuperLinkedListAnalyzer.strict
+has baseAnalyzer LinkedListAnalyzer
+
+...

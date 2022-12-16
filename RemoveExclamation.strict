@@ -3,8 +3,6 @@ Remove Text
 	RemoveExclamation("Hello There!").Remove is "Hello There"
 	RemoveExclamation("Hi!!!").Remove is "Hi"
 	RemoveExclamation("Wow! Awesome! There!").Remove is "Wow Awesome"
-	constant result = ""
 	for input
 		if value is not "!"
-			result = result + value
-	result
+			+ value

@@ -14,3 +14,34 @@ has JumpIfTrue Number
 has JumpIfFalse Number
 has JumpIfNotZero Number
 has JumpsSeparator = 300
+
+..
+MoreInstructions.strict
+has instructions
+has BlaDivide Number //will be 301 automatically
+has BlaBinaryOperatorsSeparator = 100 //forbidden!
+has BlaGreaterThan Number
+has BlaLessThan Number
+has BlaEqual Number
+has BlaNotEqual Number
+has BlaConditionalSeparator Number
+has BlaJumpIfTrue Number
+has BlaJumpIfFalse Number
+has BlaJumpIfNotZero Number
+..
+
+
+
+// lets use it!
+..
+constant instruction = .. //this type is now MoreInstructions
+constant moreInstruction = instruction to MoreInstruction
+instruction.BlaNotEqual (see the 16 initial choices, also see the extra ones from More)
+
+
+// more examples
+SomethingCrazy(mutable crazy Number) Number
+	SomethingCrazy(Increment) is 0 + 1 + 2 + 3
+	SomethingCrazy(Increment) is 3 + 4 + 5 + 6
+	SomethingCrazy(Increment) is 6 + 7 + 8 + 9
+	value + crazy + crazy + crazy
