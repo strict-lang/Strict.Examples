@@ -45,3 +45,39 @@ SomethingCrazy(mutable crazy Number) Number
 	SomethingCrazy(Increment) is 3 + 4 + 5 + 6
 	SomethingCrazy(Increment) is 6 + 7 + 8 + 9
 	value + crazy + crazy + crazy
+
+	
+	//Clever.strict
+	//mutable Number
+	//Compute Number
+	//	5 + number
+
+	//has clever = Clever(3)
+	//has number
+	//Run
+	//  clever.Compute is 8
+	//  clever.Number = 5
+	//  //error: clever = Clever(10)
+	//	clever.Compute is 10
+	//  constant bla = 5
+	//  mutable blub = Compute
+	//  constant number = bla + 1
+	//  mutable swappedBlub = blub
+	//  blub = 49
+	//  mutable temporary = swappedBlub
+	//  swappedBlub = 50
+	//  temporary is 9
+	//  temporary is 10
+	//  temporary is 11
+	//  swappedBlub is 50
+	//  blub is 49
+
+	//Compute Number
+	//  clever.Number.Increment
+	//  clever.Compute
+	//
+	//  mutable myError = Error
+	//  Run is myError
+	//  if blub > 49
+	//		myError("123")
+	//  myError("456")
