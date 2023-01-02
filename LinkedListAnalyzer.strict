@@ -1,29 +1,3 @@
-LinkedListAnalyzer
-
-
-
-
-
-constant error = Error("Hi murali")
-for error //ERROR, please specify what to iterate over, error is not a number for a Range, error is NOT an iterator
-  ..??  
-
-for error.Text
-  letters
-
-for error.Stacktraces
-  ..
-
-for hashCode
-  ..
-
-for text
-  letters
-
-for name
-  letters
-
-
 mutable visited Nodes
 GetChainedNode(number) Node
 	constant head = Node
@@ -47,38 +21,3 @@ GetLoopLength(node) Number
 	GetLoopLength(first) is 3
 	visited.Add(node)
 	visited.Contains(node.Next) ? visited.Length - visited.Index(node.Next) else GetLoopLength(node.Next)
-
-
-	...
-
-
-SuperLinkedListAnalyzer.strict
-has baseAnalyzer LinkedListAnalyzer
-
-...
-
-
-
-
-SomethingCrazy(crazy Number) Mutable(Number)
-	SomethingCrazy(1) is 0 + 1 + 1 + 1
-	SomethingCrazy(2) is 0 + 2 + 2 + 2
-	SomethingCrazy(Increment) is 0 + 1 + 2 + 3
-	SomethingCrazy(Increment) is 3 + 4 + 5 + 6
-	SomethingCrazy(Increment) is 6 + 7 + 8 + 9
-	value + crazy + crazy + crazy
-
-Thing.strict
-has character
-..
-
-SuperThing.strict
-has thing
-..
-
-
-has superThing = SuperThing(7)
-
-..
-  superThing to Number is "7" to Number
-	superThing.Floor is "7"

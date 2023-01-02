@@ -1,4 +1,3 @@
-implement Number
 has Set Number
 has Add Number
 has Subtract Number
@@ -14,70 +13,3 @@ has JumpIfTrue Number
 has JumpIfFalse Number
 has JumpIfNotZero Number
 has JumpsSeparator = 300
-
-..
-MoreInstructions.strict
-has instructions
-has BlaDivide Number //will be 301 automatically
-has BlaBinaryOperatorsSeparator = 100 //forbidden!
-has BlaGreaterThan Number
-has BlaLessThan Number
-has BlaEqual Number
-has BlaNotEqual Number
-has BlaConditionalSeparator Number
-has BlaJumpIfTrue Number
-has BlaJumpIfFalse Number
-has BlaJumpIfNotZero Number
-..
-
-
-
-// lets use it!
-..
-constant instruction = .. //this type is now MoreInstructions
-constant moreInstruction = instruction to MoreInstruction
-instruction.BlaNotEqual (see the 16 initial choices, also see the extra ones from More)
-
-
-// more examples
-SomethingCrazy(mutable crazy Number) Number
-	SomethingCrazy(Increment) is 0 + 1 + 2 + 3
-	SomethingCrazy(Increment) is 3 + 4 + 5 + 6
-	SomethingCrazy(Increment) is 6 + 7 + 8 + 9
-	value + crazy + crazy + crazy
-
-	
-	//Clever.strict
-	//mutable Number
-	//Compute Number
-	//	5 + number
-
-	//has clever = Clever(3)
-	//has number
-	//Run
-	//  clever.Compute is 8
-	//  clever.Number = 5
-	//  //error: clever = Clever(10)
-	//	clever.Compute is 10
-	//  constant bla = 5
-	//  mutable blub = Compute
-	//  constant number = bla + 1
-	//  mutable swappedBlub = blub
-	//  blub = 49
-	//  mutable temporary = swappedBlub
-	//  swappedBlub = 50
-	//  temporary is 9
-	//  temporary is 10
-	//  temporary is 11
-	//  swappedBlub is 50
-	//  blub is 49
-
-	//Compute Number
-	//  clever.Number.Increment
-	//  clever.Compute
-	//
-	//  mutable myError = Error
-	//  Run is myError
-	//  if blub > 49
-	//		myError("123")
-	//  myError("456")

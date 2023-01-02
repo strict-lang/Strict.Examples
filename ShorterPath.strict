@@ -1,7 +1,7 @@
-has target Vector2D
+has target VectorTwoD
 from(path Text)
 	//alternative
-	target = Vector2D(path.Count("E") - path.Count("W"), path.Count("N") - path.Count("S"))
+	target = VectorTwoD(path.Count("E") - path.Count("W"), path.Count("N") - path.Count("S"))
 	//if in constructor all members are still assignable/mutable
 	for path
 		if value is "N"
