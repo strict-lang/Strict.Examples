@@ -6,8 +6,3 @@ FindNumberCount Texts
 	for Range(numbers(0), numbers(1))
 		count.Increment
 	count
-
-
-constant finder = FindNumberCount((1, 2, 3))
-for finder
-
