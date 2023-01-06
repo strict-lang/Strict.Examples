@@ -1,6 +1,6 @@
-has target VectorTwoD
+has target Vector2
 from(path Text)
-	target = VectorTwoD(path.Count("E") - path.Count("W"), path.Count("N") - path.Count("S"))
+	target = Vector2(path.Count("E") - path.Count("W"), path.Count("N") - path.Count("S"))
 	for path
 		if value is "N"
 			target.Y.Increment
