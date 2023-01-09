@@ -2,16 +2,16 @@
 
 public class Fibonacci
 {
-	private int number;
+	private int number = new int();
 	public int GetNthFibonacci()
 	{
 		var first = 1;
 		var second = 1;
 		var next = 1;
 		foreach (var index in new Range(2, number))
-				var next = first + second;
-				var first = second;
-				var second = next;
+				next = first + second;
+				first = second;
+				second = next;
 		next;
 	}
 

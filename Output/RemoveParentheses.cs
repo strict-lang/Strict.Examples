@@ -2,20 +2,20 @@
 
 public class RemoveParentheses
 {
-	private string text;
+	private string text = new string();
 	public string Remove()
 	{
 		var parentheses = 0;
 		var result = "";
 		foreach (var index in text)
 			if (value == "(")
-				var parentheses = parentheses + 1;
+				parentheses = parentheses + 1;
 			else
 				if (value == ")")
-					var parentheses = parentheses - 1;
+					parentheses = parentheses - 1;
 				else
 					if (parentheses == 0)
-						var result = result + value;
+						result = result + value;
 		result;
 	}
 

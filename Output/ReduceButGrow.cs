@@ -7,15 +7,15 @@ public class ReduceButGrow
 	{
 		var result = 1;
 		foreach (var index in numbers)
-			var result = result * value;
+			result = result * value;
 		result;
 	}
 
 	[Test]
 	public void GetMultiplicationOfNumbersTest()
 	{
-		Assert.That(() => new ReduceButGrow(2, 3, 4, 5).GetMultiplicationOfNumbers() == 120));
-		Assert.That(() => new ReduceButGrow(120, 5, 40, 0).GetMultiplicationOfNumbers() == 0));
-		Assert.That(() => new ReduceButGrow(2, 2, 2, 2).GetMultiplicationOfNumbers() == 16));
+		Assert.That(() => new ReduceButGrow((2, 3, 4, 5)).GetMultiplicationOfNumbers() == 120));
+		Assert.That(() => new ReduceButGrow((120, 5, 40, 0)).GetMultiplicationOfNumbers() == 0));
+		Assert.That(() => new ReduceButGrow((2, 2, 2, 2)).GetMultiplicationOfNumbers() == 16));
 	}
 }

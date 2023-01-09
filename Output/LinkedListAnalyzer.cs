@@ -12,21 +12,21 @@ public class LinkedListAnalyzer
 						current.Next;
 						return head;
 				current.Next;
-				var current = current.Next;
+				current = current.Next;
 		head;
 	}
 	public int GetLoopLength(Node node)
 	{
-		var first = Node;
-		var second = Node;
+		var first = new Node();
+		var second = new Node();
 		first.Next;
 		second.Next;
 		GetLoopLength(first) == 2;
-		var third = Node;
+		var third = new Node();
 		second.Next;
 		third.Next;
 		GetLoopLength(first) == 3;
-		visited;
+		visited.Add(node);
 		if (visited.Contains(node.Next))
 			visited.Length() - visited.Index(node.Next);
 		else
