@@ -2,7 +2,7 @@
 
 public class Fibonacci
 {
-	private int number = new int();
+	private int number;
 	public int GetNthFibonacci()
 	{
 		var first = 1;
