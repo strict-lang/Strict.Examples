@@ -5,4 +5,4 @@ Remove Text
 	RemoveExclamation("Wow! Awesome! There!").Remove is "Wow Awesome"
 	for text
 		if value is not "!"
-			+ value
+			value = value + value

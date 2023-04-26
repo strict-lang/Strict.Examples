@@ -1,13 +1,20 @@
-﻿namespace SourceGeneratorTests;
+﻿namespace TestPackage;
 
 public class RemoveExclamation
 {
-	public string Remove(string input)
+	private string text = new string();
+	public string Remove()
 	{
-		var result = "";
-		for (var index = 0; index < input.Length; index++)
-			if (input[index] != '!')
-				result = result + input[index];
-		return result;
+		foreach (var index in text)
+			if (value is not "!")
+				value = value + value;
+	}
+
+	[Test]
+	public void RemoveTest()
+	{
+		Assert.That(() => new RemoveExclamation("Hello There!").Remove() == "Hello There"));
+		Assert.That(() => new RemoveExclamation("Hi!!!").Remove() == "Hi"));
+		Assert.That(() => new RemoveExclamation("Wow! Awesome! There!").Remove() == "Wow Awesome"));
 	}
 }
