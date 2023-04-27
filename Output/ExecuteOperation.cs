@@ -6,7 +6,7 @@ public class ExecuteOperation
 	public Register TryOperationExecution(Statement statement)
 	{
 		if (registers.Length() < 2)
-			Strict.Language.Expressions.Error TestPackage.Text;
+			Strict.Language.Expressions.Error TestPackage.Error;
 		GetOperationResult(statement, registers[1], registers[0]);
 		registers[1];
 	}

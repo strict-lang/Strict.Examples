@@ -1,14 +1,17 @@
-﻿namespace SourceGeneratorTests;
+﻿namespace TestPackage;
 
 public class ReverseList
 {
-	public T[] Reverse<T>(T[] elements)
+	private List<int> numbers = new List<int>();
+	public Iterator(Generic TestPackage.Generic) Reverse()
 	{
-		var reversedList = new T[elements.Length];
-		for (var index = 0; index < elements.Length; index++)
-		{
-			reversedList[elements.Length - 1 - index] = elements[index];
-		}
-		return reversedList;
+		foreach (var index in new Range(0, numbers.Length()).Reverse())
+			numbers[index];
+	}
+
+	[Test]
+	public void ReverseTest()
+	{
+		Assert.That(() => new ReverseList(1, 2, 3, 4).Reverse() == (4, 3, 2, 1)));
 	}
 }
