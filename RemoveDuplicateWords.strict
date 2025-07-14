@@ -6,4 +6,3 @@ Remove Texts
 	for texts
 		if texts.Count(value) > 1
 			texts.Remove(value)
-	texts

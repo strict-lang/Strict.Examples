@@ -1,13 +1,10 @@
-has Instruction
 has instructions
-has LoopIfNonZero Instruction
-has JumpBackIfNonZero Instruction
 GoToMatchingLoopBracket(direction Number, mutable index Number)
 	let loopDepth = direction
 	for Range(index + direction, instructions.Length)
-		if instructions(index) is LoopIfNonZero
+		if instructions(index) is Instruction.LoopIfNonZero
 			loopDepth += 1
-		if instructions(index) is JumpBackIfNonZero
+		if instructions(index) is Instruction.JumpBackIfNonZero
 			loopDepth -= 1
 		if loopDepth is 0
 			return 0

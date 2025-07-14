@@ -1,15 +1,17 @@
-has Set Number
-has Add Number
-has Subtract Number
-has Multiply Number
-has Divide Number
-has BinaryOperatorsSeparator = 100
-has GreaterThan Number
-has LessThan Number
-has Equal Number
-has NotEqual Number
-has ConditionalSeparator = 200
-has JumpIfTrue Number
-has JumpIfFalse Number
-has JumpIfNotZero Number
-has JumpsSeparator = 300
+constant Set
+constant Add
+constant Subtract
+constant Multiply
+constant Divide
+constant BinaryOperatorsSeparator = 100
+constant GreaterThan
+constant LessThan
+constant Equal
+constant NotEqual
+constant ConditionalSeparator = 200
+constant JumpIfTrue
+constant JumpIfFalse
+constant JumpIfNotZero
+constant JumpsSeparator = 300
+constant LoopIfNonZero
+constant JumpBackIfNonZero
